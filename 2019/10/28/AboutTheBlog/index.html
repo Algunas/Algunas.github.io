@@ -24,7 +24,7 @@
 <meta property="og:image" content="https:&#x2F;&#x2F;algunas.github.io&#x2F;2019&#x2F;10&#x2F;28&#x2F;AboutTheBlog&#x2F;6.jpg">
 <meta property="og:image" content="https:&#x2F;&#x2F;algunas.github.io&#x2F;2019&#x2F;10&#x2F;28&#x2F;AboutTheBlog&#x2F;7.jpg">
 <meta property="og:image" content="https:&#x2F;&#x2F;algunas.github.io&#x2F;2019&#x2F;10&#x2F;28&#x2F;AboutTheBlog&#x2F;1.jpg">
-<meta property="og:updated_time" content="2020-02-06T17:49:12.950Z">
+<meta property="og:updated_time" content="2020-02-07T13:04:00.807Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:image" content="https:&#x2F;&#x2F;algunas.github.io&#x2F;2019&#x2F;10&#x2F;28&#x2F;AboutTheBlog&#x2F;8.jpg">
   
@@ -156,7 +156,7 @@
   <div class="article-inner">
     
       <header class="article-header">
-<!--     
+<!--    
   
     <h1 class="article-title" itemprop="name">
       关于这个博客
@@ -175,7 +175,7 @@
         <i class="fa fa-keyboard-o"></i>
         <span class="post-meta-item-text">  字数统计: </span>
         <span class="post-count">
-        665字</span>
+        662字</span>
       </span>
     </span>
 
@@ -227,18 +227,13 @@
 <p>需要注意的是，这里的<code>Homepage URL</code>和<code>Authorization callback URL</code>一般是填博客首页地址，<br>而且需要加上协议，比如<code>http://</code><br><img src="6.jpg" alt="图片">  </p>
 <p>然后得到<br><img src="7.jpg" alt="图片">  </p>
 <p>在yilia的_config.yml中添加以下，并修改：  </p>
-<p><code>Gitment  
-gitment_owner:   #你的 GitHub ID  
-gitment_repo: &#39;repo&#39;          #存储评论的 repo  
-gitment_oauth:  
-  client_id: &#39;client ID&#39;           #client ID  
-  client_secret: &#39;client secret&#39;       #client secret</code>  </p>
+<p><code>Gitment</code><br><code>gitment_owner:   #你的 GitHub ID</code><br><code>gitment_repo: &#39;repo&#39;          #存储评论的 repo</code><br><code>gitment_oauth:</code><br>  <code>client_id: &#39;client ID&#39;           #client ID</code><br>  <code>client_secret: &#39;client secret&#39;       #client secret</code>  </p>
 <p><em>然后会出现一系列的花式问题，我没复现就算了</em>  </p>
 <p>在<code>yilia/layout/_partial/post</code>目录下找到gitment.ejs  </p>
 <blockquote>
 <p>将下面的代码<br><code>&lt;link rel=&quot;stylesheet&quot; href=&quot;...&quot;&gt;</code><br><code>&lt;script src=&quot;...&quot;&gt;&lt;/script&gt;</code><br>换成：<br><code>&lt;link rel=&quot;stylesheet&quot; href=&quot;https://jjeejj.github.io/css/gitment.css&quot;&gt;</code><br><code>&lt;script src=&quot;https://www.wenjunjiang.win/js/gitment.js&quot;&gt;&lt;/script&gt;</code>  </p>
 </blockquote>
-<p>然后<code>hexo clean``hexo g -d</code>试下</p>
+<p>然后<code>hexo clean</code>,<code>hexo g -d</code>试下</p>
 <hr>
 <h2 id="yilia放大问题"><a href="#yilia放大问题" class="headerlink" title="yilia放大问题"></a>yilia放大问题</h2><p><em>yilia主题部署到github上后会莫名的放大，很影响效果</em>  </p>
 <p><strong>解决办法</strong>  </p>
@@ -261,6 +256,13 @@ gitment_oauth:
     
       <div>
       <blockquote>
+      <!-- 下面这标题是我自己写的，嘿嘿 -->
+        <strong>本文标题：</strong>
+        
+          关于这个博客
+        
+        <br>
+
         <strong>本文作者：</strong>
         
           Algunas
@@ -458,7 +460,8 @@ gitment_oauth:
 <script src="https://www.wenjunjiang.win/js/gitment.js"></script>
 <script>
 var gitment = new Gitment({
-  id: "https://Algunas.github.io",
+  // id: "https://Algunas.github.io", 换成了下面一行，为了将github issue的id改为按日期
+  id: "",
   owner: 'Algunas',
   repo: 'Algunas.github.io',
   oauth: {
@@ -566,15 +569,15 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
           <ul class="article-tag-list" q-show="showTags">
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color2">python</a>
-              </li>
-             
-              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color3">随笔</a>
               </li>
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color1">yilia</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color2">python</a>
               </li>
             
             <div class="clearfix"></div>
