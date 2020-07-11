@@ -23,8 +23,10 @@
 <meta property="og:image" content="https:&#x2F;&#x2F;algunas.github.io&#x2F;2019&#x2F;10&#x2F;28&#x2F;AboutTheBlog&#x2F;5.jpg">
 <meta property="og:image" content="https:&#x2F;&#x2F;algunas.github.io&#x2F;2019&#x2F;10&#x2F;28&#x2F;AboutTheBlog&#x2F;6.jpg">
 <meta property="og:image" content="https:&#x2F;&#x2F;algunas.github.io&#x2F;2019&#x2F;10&#x2F;28&#x2F;AboutTheBlog&#x2F;7.jpg">
+<meta property="og:image" content="https:&#x2F;&#x2F;algunas.github.io&#x2F;2019&#x2F;10&#x2F;28&#x2F;AboutTheBlog&#x2F;10.jpg">
+<meta property="og:image" content="https:&#x2F;&#x2F;algunas.github.io&#x2F;2019&#x2F;10&#x2F;28&#x2F;AboutTheBlog&#x2F;11.jpg">
 <meta property="og:image" content="https:&#x2F;&#x2F;algunas.github.io&#x2F;2019&#x2F;10&#x2F;28&#x2F;AboutTheBlog&#x2F;1.jpg">
-<meta property="og:updated_time" content="2020-02-07T15:50:14.888Z">
+<meta property="og:updated_time" content="2020-02-08T11:06:46.375Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:image" content="https:&#x2F;&#x2F;algunas.github.io&#x2F;2019&#x2F;10&#x2F;28&#x2F;AboutTheBlog&#x2F;8.jpg">
   
@@ -84,6 +86,8 @@
     			
             
 		</nav>
+		<!-- 测试1，添加了下面一行 -->
+		<span class="post-count">总字数：758</span>
 		<nav class="header-nav">
 			<div class="social">
 				
@@ -95,7 +99,6 @@
 		</nav>
 	</header>		
 </div>
-
     </div>
     <div class="mid-col" q-class="show:isShow,hide:isShow|isFalse">
       
@@ -167,29 +170,12 @@
         <a href="" class="archive-article-date">
   	<time datetime="2019-10-28T12:03:21.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-10-28</time>
 </a>
-<!-- 下面三行是我添加的，为了字数统计和阅读时长 -->
+<!-- 下面三行是我添加的，为了字数统计和阅读时长，为了测试1 暂时删了 -->
         
-          <div style="margin-top:10px;">
-    <span class="post-time">
-      <span class="post-meta-item-icon">
-        <i class="fa fa-keyboard-o"></i>
-        <span class="post-meta-item-text">  字数统计: </span>
-        <span class="post-count">
-        585字</span>
-      </span>
-    </span>
-
-    <span class="post-time">
-      &nbsp; | &nbsp;
-      <span class="post-meta-item-icon">
-        <i class="fa fa-coffee"></i>
-        <span class="post-meta-item-text">  预计阅读≈ </span>
-        <span class="post-count">2分钟</span>
-      </span>
-    </span>
-</div>
-<!-- 这是我添加的文件，为了字数统计和阅读时长 -->
-          
+          <!-- 测试1,并添加了以下三行 -->
+          <div align="center" class="post-count">
+          字数：732字 | 阅读时长：2分钟
+          </div>
         
       </header>
     
@@ -205,7 +191,7 @@
       
         <p>嗯哼 这是我做的第一个blog</p>
 <a id="more"></a>
-<h2 id="你好哇！"><a href="#你好哇！" class="headerlink" title="你好哇！"></a>你好哇！</h2><p><em>下面是我在配置主题和写文章时遇到的一些问题，及其解决办法</em>  </p>
+<h2 id="你好哇！"><a href="#你好哇！" class="headerlink" title="你好哇！"></a>你好哇！</h2><p><em>下面是我在配置主题和写文章时遇到的一些问题或优化想法，及其解决办法</em>  </p>
 <hr>
 <h1 id="使用yilia主题时遇见的一些问题"><a href="#使用yilia主题时遇见的一些问题" class="headerlink" title="使用yilia主题时遇见的一些问题"></a>使用yilia主题时遇见的一些问题</h1><h2 id="文章添加多个标签"><a href="#文章添加多个标签" class="headerlink" title="文章添加多个标签"></a>文章添加多个标签</h2><p><img src="8.jpg" alt="图片">  </p>
 <hr>
@@ -227,13 +213,22 @@
 <p>需要注意的是，这里的<code>Homepage URL</code>和<code>Authorization callback URL</code>一般是填博客首页地址，<br>而且需要加上协议，比如<code>http://</code><br><img src="6.jpg" alt="图片">  </p>
 <p>然后得到<br><img src="7.jpg" alt="图片">  </p>
 <p>在yilia的_config.yml中添加以下，并修改：  </p>
-<p><code>Gitment</code><br><code>gitment_owner:   #你的 GitHub ID</code><br><code>gitment_repo: &#39;repo&#39;          #存储评论的 repo</code><br><code>gitment_oauth:</code><br>  <code>client_id: &#39;client ID&#39;           #client ID</code><br>  <code>client_secret: &#39;client secret&#39;       #client secret</code>  </p>
-<p><em>然后会出现一系列的花式问题，我没复现就算了</em>  </p>
+<pre><code>Gitment  
+gitment_owner:   #你的 GitHub ID  
+gitment_repo: &apos;repo&apos;          #存储评论的 repo  
+gitment_oauth:  
+  client_id: &apos;client ID&apos;           #client ID  
+  client_secret: &apos;client secret&apos;       #client secret  </code></pre><p><em>然后会出现一系列的花式问题，我没复现就算了</em>  </p>
 <p>在<code>yilia/layout/_partial/post</code>目录下找到gitment.ejs  </p>
 <blockquote>
 <p>将下面的代码<br><code>&lt;link rel=&quot;stylesheet&quot; href=&quot;...&quot;&gt;</code><br><code>&lt;script src=&quot;...&quot;&gt;&lt;/script&gt;</code><br>换成：<br><code>&lt;link rel=&quot;stylesheet&quot; href=&quot;https://jjeejj.github.io/css/gitment.css&quot;&gt;</code><br><code>&lt;script src=&quot;https://www.wenjunjiang.win/js/gitment.js&quot;&gt;&lt;/script&gt;</code>  </p>
 </blockquote>
 <p>然后<code>hexo clean</code>,<code>hexo g -d</code>试下</p>
+<hr>
+<h2 id="文章内目录优化"><a href="#文章内目录优化" class="headerlink" title="文章内目录优化"></a>文章内目录优化</h2><p><em>原版目录如下</em><br><img src="10.jpg" alt="图片"><br><em>小小的，加个live2d就…实在影响</em>  </p>
+<hr>
+<h2 id="界面左侧昵称字体更改"><a href="#界面左侧昵称字体更改" class="headerlink" title="界面左侧昵称字体更改"></a>界面左侧昵称字体更改</h2><p>  <em>有时自定义的需求总要有点</em>  </p>
+<p>  在themes/yilia/source/目录下找到main.xxxx.css文件(xxxx表示不确定，因为版本不同可能会不同)，<br>  <code>Ctrl + f</code>查找<code>header-author</code>，会找到好几个结果，认准下面这个：<br><img src="11.jpg" alt="图片"><br>将<code>font-family:Roboto,serif;</code>改为<code>font-family:&quot;STXingKai&quot;,serif;</code>，效果就是改成行楷了<br>若要改成别的字体，可以百度“font-family对照表”，自行替换  </p>
 <hr>
 <h1 id="域名的指定"><a href="#域名的指定" class="headerlink" title="域名的指定"></a>域名的指定</h1><p><em>因为会比较频繁上传到Github上，所以自己的域名和库的绑定会出现不稳定的情况。</em></p>
 <p><strong>解决办法</strong>：<br>在本地blog所在目录的源文件夹下，  </p>
@@ -282,37 +277,6 @@
     
 <!-- 以上 -->
 
-      
-        <div class="page-reward">
-          <a href="javascript:;" class="page-reward-btn tooltip-top">
-            <div class="tooltip tooltip-east">
-            <span class="tooltip-item">
-              赏
-            </span>
-            <span class="tooltip-content">
-              <span class="tooltip-text">
-                <span class="tooltip-inner">
-                  <p class="reward-p"><i class="icon icon-quo-left"></i>谢谢你请我吃糖果<i class="icon icon-quo-right"></i></p>
-                  <div class="reward-box">
-                    
-                    <div class="reward-box-item">
-                      <img class="reward-img" src="/assets/侧脸.jpg">
-                      <span class="reward-type">支付宝</span>
-                    </div>
-                    
-                    
-                    <div class="reward-box-item">
-                      <img class="reward-img" src="/assets/侧脸.jpg">
-                      <span class="reward-type">微信</span>
-                    </div>
-                    
-                  </div>
-                </span>
-              </span>
-            </span>
-          </div>
-          </a>
-        </div>
       
     </div>
     <div class="article-info article-info-index">
@@ -430,7 +394,7 @@
                 </span>
                 <span class="tooltip-content">
                     <div class="toc-article">
-                    <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#你好哇！"><span class="toc-number">1.</span> <span class="toc-text">你好哇！</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#使用yilia主题时遇见的一些问题"><span class="toc-number"></span> <span class="toc-text">使用yilia主题时遇见的一些问题</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#文章添加多个标签"><span class="toc-number">1.</span> <span class="toc-text">文章添加多个标签</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#文章插入图片"><span class="toc-number">2.</span> <span class="toc-text">文章插入图片</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#在yilia主题添加gitment评论系统"><span class="toc-number">3.</span> <span class="toc-text">在yilia主题添加gitment评论系统</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#域名的指定"><span class="toc-number"></span> <span class="toc-text">域名的指定</span></a>
+                    <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#你好哇！"><span class="toc-number">1.</span> <span class="toc-text">你好哇！</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#使用yilia主题时遇见的一些问题"><span class="toc-number"></span> <span class="toc-text">使用yilia主题时遇见的一些问题</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#文章添加多个标签"><span class="toc-number">1.</span> <span class="toc-text">文章添加多个标签</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#文章插入图片"><span class="toc-number">2.</span> <span class="toc-text">文章插入图片</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#在yilia主题添加gitment评论系统"><span class="toc-number">3.</span> <span class="toc-text">在yilia主题添加gitment评论系统</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#文章内目录优化"><span class="toc-number">4.</span> <span class="toc-text">文章内目录优化</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#界面左侧昵称字体更改"><span class="toc-number">5.</span> <span class="toc-text">界面左侧昵称字体更改</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#域名的指定"><span class="toc-number"></span> <span class="toc-text">域名的指定</span></a>
                     </div>
                 </span>
             </div>
@@ -564,15 +528,15 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
           <ul class="article-tag-list" q-show="showTags">
              
               <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color2">python</a>
+              </li>
+             
+              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color3">随笔</a>
               </li>
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color1">yilia</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color2">python</a>
               </li>
             
             <div class="clearfix"></div>
@@ -623,7 +587,7 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
     
     	<section class="tools-section tools-section-me" q-show="aboutme">
   	  	
-  	  		<div class="aboutme-wrap" id="js-aboutme">是个菜鸡&lt;br&gt;&lt;br&gt;惭愧&lt;br&gt;&lt;br&gt;只做了一点微小的工作&lt;br&gt;谢谢大家</div>
+  	  		<div class="aboutme-wrap" id="js-aboutme">是个菜鸡&lt;br&gt;&lt;br&gt;不定时更新&lt;br&gt;</div>
   	  	
     	</section>
     
@@ -697,5 +661,5 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
 
 </div>
   </div>
-<script src="/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"pluginRootPath":"live2dw/","pluginJsPath":"lib/","pluginModelPath":"assets/","tagMode":false,"debug":false,"model":{"jsonPath":"/live2dw/assets/tororo.model.json"},"display":{"position":"right","width":240,"height":480},"mobile":{"show":"ture"},"log":false});</script></body>
+</body>
 </html>
